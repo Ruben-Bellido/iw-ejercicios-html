@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Reserva de sociedad</h1>
+    <p>Rellena el siguiente formulario para reservar la sociedad para un día en concreto</p>
+    <form name="datos" action="Ej_3.html" method="post">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </p>
+            <p>Eres socio?</p>
+            <p><input type="radio" name="socio" value="si">Si, soy socio <input type="radio" name="socio" value="no">No
+                soy socio</p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <p>
+                <label for="edad">Edad </label>
+                <select name="edad" id="edad">
+                    <option selected value="-18">Menor de 18</option>
+                    <option value="18-65">Entre 18 y 65</option>
+                    <option value="+65">Mayor de 65</option>
+                </select>
+            </p>
+            <p>Selecciona la fecha y hora de reserva:</p>
+            <p><input type="date"> <input type="time"></p>
+            <p><textarea style="height:100px;"></textarea></p>
+        </fieldset>
+        <p><input type="checkbox" name="condiciones">Acepto las condiciones</p>
+        <input type="submit" name="enviar" value="ENVIAR">
+    </form>
+</body>
+
+</html>
