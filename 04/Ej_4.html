@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 4</h1>
+        <nav>
+            <ul>
+                <li><a href="#About">Sobre mí</a></li>
+                <li><a href="#Proyects">Mis proyectos</a></li>
+                <li><a href="#Contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <header>
+                <h2 id="About">Sobre mí</h2>
+            </header>
+            <p>Este es el cuarto ejercicio. Esta página está creada con HTML5.</p>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2 id="Proyects">Mis proyectos</h2>
+            </header>
+            <article>
+                <header>
+                    <h3>Sobre el centro educativo</h3>
+                </header>
+                <p>A continuacióin se presenta el enlace de mi centro educativo: <i><a href="https://www.deusto.es/es/inicio/estudia/estudios/grado/grado-dual-industria-digital">Grado Universitario Dual en Industria Digital</a></i></p>
+            </article>
+            <article>
+                <header>
+                    <h3>Sobre HTML5</h3>
+                </header>
+                <p>Este es el enlace de HTML5 en la wikipedia: <i><a href="https://es.wikipedia.org/wiki/HTML5">HyperText Markup Language v5</a></i></p>
+            </article>
+            <article>
+                <header>
+                    <h3>Formulario de reserva</h3>
+                </header>
+                <form action="Ej_4.html" method="post">
+                    <fieldset>
+                        <legend>Datos de la reserva</legend>
+                        <label name="nombre" for="txtNombre">Nombre:</label>
+                        <input type="text" name="nombre" id="txtNombre">
+                        <br><br>
+                        <label name="descripcion" for="txtDescripcion">Descripción:</label>
+                        <br>
+                        <textarea name="descripcion" id="txtDescripcion"></textarea>
+                        <br><br>
+                        <label name="enlace" for="txtEnlace">Enlace:</label>
+                        <input type="text" name="enlace" id="txtEnlace">
+                        <br><br>
+                        <input type="submit" name="reservar" value="Reservar">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2 id="Contact">Información de contacto</h2>
+            </header>
+            <p><b>Email:</b> bellido.ruben@opendeusto.es</p>
+        </section>
+        <hr>
+        <footer>
+            <p>Página creada por Rubén Bellido</p>
+        </footer>
+    </main>
+</body>
+
+</html>
